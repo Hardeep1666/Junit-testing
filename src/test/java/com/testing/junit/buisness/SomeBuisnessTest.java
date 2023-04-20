@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class SomeBuisnessTest {
 
 	
-//-------------------------------Simple test cases where we are giving data Manually----------------------------------------
+
 	@Test
 	public void testCalculateSum_basic()
 	{
@@ -41,7 +41,6 @@ public class SomeBuisnessTest {
 		assertEquals(expectedResult, actualResult);
 	}
 }
-//______________________________________________________________________________________________________________________
 
 
 

@@ -38,8 +38,7 @@ public class HelloWorldControllerTest {
 					.andReturn();
 	
 		
-		//call  "/hello"  not a java thing it is a uri so we need MockMvc
-		// verify "hello World"
+	
 	
 			assertEquals("Hello world",result.getResponse().getContentAsString());
 		

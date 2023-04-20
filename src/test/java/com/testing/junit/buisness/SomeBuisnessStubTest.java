@@ -40,8 +40,7 @@ class SomeDataServiceStub_oneValue implements SomeDataService
 public class SomeBuisnessStubTest {
 
 	
-//-------------------------------Simple test cases where we are giving data Manually----------------------------------------
-	// setting of service here  the data manually nor having any type of service  
+
 	@Test
 	public void testCalculateSumUSingDataService_basic()
 	{
@@ -75,7 +74,6 @@ public class SomeBuisnessStubTest {
 		assertEquals(expectedResult, actualResult);
 	}
 }
-//______________________________________________________________________________________________________________________
 
 
 

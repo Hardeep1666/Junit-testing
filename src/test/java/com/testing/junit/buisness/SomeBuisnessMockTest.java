@@ -16,7 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class SomeBuisnessMockTest {
 
 	
-//-------------------------------Simple test cases where we are giving data Manually----------------------------------------
+
 	
  @InjectMocks
 	SomeBuisnessImpl buisnessImpl= new SomeBuisnessImpl();
@@ -36,7 +36,7 @@ public class SomeBuisnessMockTest {
 	@Test
 	public void testCalculateSumUSingDataService_basic()
 	{
-		// dataServiceMock getAllData new int[]{1,2,3};
+		
 		
 		when(dataServiceMock.getAlldata()).thenReturn(new int [] {1,2,3});
 		assertEquals(6, buisnessImpl.calculateSumUsingDataService());
@@ -47,7 +47,7 @@ public class SomeBuisnessMockTest {
 	public void testCalculateSumUSingDataService_empty()
 	{
 		
-		// dataServiceMock getAllData new int[]{ };
+		
 		
 		when(dataServiceMock.getAlldata()).thenReturn(new int [] {});
 		assertEquals(0, buisnessImpl.calculateSumUsingDataService());
@@ -58,14 +58,14 @@ public class SomeBuisnessMockTest {
 	public void testCalculateSumUSingDataService_oneValue()
 	{
 		
-		// dataServiceMock getAllData new int[]{6};
+	
 		
 		when(dataServiceMock.getAlldata()).thenReturn(new int [] {6});
 		assertEquals(6, buisnessImpl.calculateSumUsingDataService());
 	}
 	
 }
-//______________________________________________________________________________________________________________________
+
 
 
 

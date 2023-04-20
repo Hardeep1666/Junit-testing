@@ -34,16 +34,12 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 		MvcResult result= mockMvc.perform(requestBuilder).andDo(print())
 				.andExpect(status().isOk())
-				//.andExpect(content().string("\n" + "{\"id\":1,\"name\":\"bat\",\"price\":10,\"quantity\":100}"))
+			
 				.andExpect(MockMvcResultMatchers.content().json("{\"id\":1,\"name\":\"bat\",\"price\":10,\"quantity\":100}")).andReturn();
 		
 	}
 		
 	
-	//call  "/hello"  not a java thing it is a uri so we need MockMvc
-	// verify "hello World"
-
-		//assertEquals("Hello world",result.getResponse().getContentAsString());
 	
 	
 	

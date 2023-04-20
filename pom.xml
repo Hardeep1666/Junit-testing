@@ -12,15 +12,19 @@
 	<artifactId>junit-testing</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>junit-testing</name>
+  <packaging>war</packaging>
 	<description>Demo project for testing with jUnit</description>
 	<properties>
 		<java.version>17</java.version>
-		
-		<sonar.coverage.jacoco.xmlReportPaths>
+				
+  <sonar.coverage.jacoco.xmlReportPaths>
     ../app-it/target/site/jacoco-aggregate/jacoco.xml
   </sonar.coverage.jacoco.xmlReportPaths>
+
 		
 	</properties>
+	
+	
 	
 	<profiles>
 		
@@ -77,6 +81,7 @@
              http://localhost:9000
           </sonar.host.url>
           <sonar.login>admin</sonar.login>
+          
           <sonar.password>H$#9753241360p</sonar.password>
         <!---<sonar.analysis.mode>incremental</sonar.analysis.mode>-->
         <sonar.issuesReport.html.enable>true</sonar.issuesReport.html.enable>
